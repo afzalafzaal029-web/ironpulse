@@ -12,7 +12,6 @@ import clsx from "clsx";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/classes", label: "Classes" },
-  { href: "/trainers", label: "Trainers" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

@@ -32,7 +32,7 @@ export default function HomePage() {
       >
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=85"
+            src="/hero-image.jpg"
             alt="IRONPULSE Gym interior with professional equipment"
             fill
             priority
@@ -223,7 +223,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920&q=80"
+            src="/Community Image.jpg"
             alt="Join IRONPULSE community"
             fill
             className="object-cover opacity-30"
