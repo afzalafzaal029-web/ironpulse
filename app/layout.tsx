@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     title: "IRONPULSE | Premium Fitness Studio",
     description:
       "Transform your body at IRONPULSE. Join the elite fitness community.",
-    url: "https://ironpulse-gym.vercel.app",
+    url: "https://ironpulse-fitnessgym.vercel.app",
     siteName: "IRONPULSE",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "IRONPULSE Fitness Studio",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "IRONPULSE | Premium Fitness Studio",
     description:
       "Transform your body at IRONPULSE. Join the elite fitness community.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ironpulse-gym.vercel.app",
+    canonical: "https://ironpulse-fitnessgym.vercel.app",
   },
 };
 
@@ -94,7 +94,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "IRONPULSE Fitness Studio",
-    image: "https://ironpulse-gym.vercel.app/og-image.jpg",
+    image: "https://ironpulse-fitnessgym.vercel.app/og-image.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: "123 Fitness Avenue",
@@ -106,8 +106,8 @@ export default function RootLayout({
     priceRange: "$$",
     openingHours: "Mo-Su 05:00-22:00",
     sameAs: [
-      "https://instagram.com/ironpulse",
-      "https://twitter.com/ironpulse",
+      "https://instagram.com/ironpulse-fitnessgym",
+      "https://twitter.com/ironpulse-fitnessgym",
     ],
   };
 

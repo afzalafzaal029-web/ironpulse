@@ -11,6 +11,7 @@ import BMICalculator from "@/app/components/BMICalculator";
 import ClassCard from "@/app/components/ClassCard";
 import TrainerCard from "@/app/components/TrainerCard";
 import TestimonialCard from "@/app/components/TestimonialCard";
+import { useThemeStore } from "@/store/themeStore";
 
 export default function HomePage() {
   const heroRef = useRef(null);

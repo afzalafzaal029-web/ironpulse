@@ -23,10 +23,23 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
-  // ✅ Individual selectors – type safe
-  const theme = useThemeStore((state:any) => state.theme);
-  const toggleTheme = useThemeStore((state:any) => state.toggleTheme);
-  const totalBookings = useBookingStore((state:any) => state.totalBookings);
+  const theme = useThemeStore((state) => state.theme);
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
+  const totalBookings = useBookingStore((state) => state.totalBookings);
+
+  // ✅ Premium toggle handler with View Transition
+  const handleToggleTheme = () => {
+    // Agar browser View Transition support nahi karta, toh normal toggle
+    if (!document.startViewTransition) {
+      toggleTheme();
+      return;
+    }
+
+    // Super smooth animation ke saath toggle
+    document.startViewTransition(() => {
+      toggleTheme();
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -92,7 +105,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-3 lg:gap-4">
             <button
-              onClick={toggleTheme}
+              onClick={handleToggleTheme} // ✅ Updated handler
               className="p-2 rounded-lg hover:bg-surface transition-colors"
               aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
             >
@@ -158,7 +171,7 @@ export default function Navbar() {
               ))}
               <div className="flex items-center gap-3 pt-3 border-t border-border">
                 <button
-                  onClick={toggleTheme}
+                  onClick={handleToggleTheme} // ✅ Updated handler
                   className="p-2 rounded-lg hover:bg-surface"
                   aria-label="Toggle theme"
                 >
