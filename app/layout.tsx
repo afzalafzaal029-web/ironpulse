@@ -118,6 +118,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="google-site-verification" content="UNx2lKPtjcM6Yo4CM2BXFD5w4AnImv6dvlQ-IhsLS6A" />
       </head>
       <body className={`${inter.variable} ${oswald.variable} antialiased`}>
         <ThemeProvider>
