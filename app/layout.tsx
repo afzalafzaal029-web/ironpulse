@@ -18,7 +18,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ironpulse-gym.vercel.app"),
+  metadataBase: new URL("https://ironpulse-fitnessgym.vercel.app/"),
   title: {
     default: "IRONPULSE | Premium Fitness Studio",
     template: "%s | IRONPULSE",
@@ -94,7 +94,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "IRONPULSE Fitness Studio",
-    image: "https://ironpulse-fitnessgym.vercel.app/og-image.jpg",
+    image: "https://ironpulse-fitnessgym.vercel.app/og-image.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: "123 Fitness Avenue",
